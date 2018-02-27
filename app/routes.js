@@ -31,6 +31,7 @@ module.exports = function(apiRoutes ,app ,User ,jwt){
                     });
 
                     res.json({
+                        email:user.email,
                         success: true,
                         message: 'Enjoy your token!',
                         token: token
